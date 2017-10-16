@@ -1,0 +1,21 @@
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /api-docs
+server:
+  contextPath: /
+  port: 8080
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_example?useSSL=false
+    username: juniter
+    password: juniter
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+ mapperLocations: classpath:**/mapper/*.xml
